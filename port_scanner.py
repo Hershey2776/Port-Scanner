@@ -27,7 +27,7 @@ def port_queue(port_range):
 
 # def get_value():
 #     port_range = int(input("Enter the upper range of the port selection"))
-    
+
 
 def scanner():
     while not queue.empty():
@@ -36,9 +36,8 @@ def scanner():
             print(f"{port} is open")
             open_ports.append(port)
 
-port_range = [0,65535]
-
-
+port_range = range(0,65565)
+port_queue(port_range)
 
 thread_list = []
 
